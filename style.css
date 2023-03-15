@@ -1,0 +1,22 @@
+body {
+    font-family: helvetica, sans-serif;
+}
+
+.grid {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box {
+    border: 1px solid black;
+    min-width: 10px;
+    min-height: 10px;
+}
