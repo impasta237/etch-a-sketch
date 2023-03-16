@@ -1,22 +1,47 @@
 body {
     font-family: helvetica, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.reset-button {
+    font-size: 24px;
+    padding: 8px;
+
 }
 
 .grid {
     display: flex;
+    flex: 1;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    width: 960px;
+    height: 960px;
+    margin: 16px;
 }
 
 .row {
     display: flex;
+    flex-direction: row;
+    flex: 1 1 auto;
+    width: 960px;
     justify-content: center;
     align-items: center;
 }
 
 .box {
+    display: flex;
+    flex-direction: row;
+    flex: 1 1 auto;
+    justify-content: center;
+    align-items: stretch;
+    background-color: lightblue;
     border: 1px solid black;
-    min-width: 10px;
-    min-height: 10px;
+}
+
+.box.highlight {
+    background-color: green;
 }
